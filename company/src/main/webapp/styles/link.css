@@ -1,0 +1,41 @@
+@charset "gb2312";
+/* CSS Document */
+
+A:visited {
+	color:#000000;TEXT-DECORATION: none;
+}
+A:active {
+	color:#000000;TEXT-DECORATION: underline;
+}
+A:hover {
+	color:#D9001B;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+A:link {
+	color:#000000;TEXT-DECORATION: none;
+}
+
+.orange:visited {
+	color:#D9001B;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+.orange:active {
+	color:#ff1100;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+.orange:hover {
+	color:#ff1100;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+.orange:link {
+	color:#ff1100;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+
+.white:visited {
+	color:#ffffff;TEXT-DECORATION: none;
+}
+.white:active {
+	color:#ffffff;TEXT-DECORATION: underline;
+}
+.white:hover {
+	color:#ffffff;LEFT: 1px; TEXT-DECORATION: underline; 
+}
+.white:link {
+	color:#ffffff;TEXT-DECORATION: none;
+}
