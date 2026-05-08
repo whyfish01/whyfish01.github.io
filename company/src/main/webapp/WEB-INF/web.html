@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>InsertIndustry</servlet-name>
+		<servlet-class>analys.servlet.industry.InsertIndustry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertIndustry</servlet-name>
+		<url-pattern>/InsertIndustry</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelIndustry</servlet-name>
+		<servlet-class>analys.servlet.industry.DelIndustry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelIndustry</servlet-name>
+		<url-pattern>/DelIndustry</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>QueryIndustry</servlet-name>
+		<servlet-class>analys.servlet.industry.QueryIndustry</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryIndustry</servlet-name>
+		<url-pattern>/QueryIndustry</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertCompany</servlet-name>
+		<servlet-class>analys.servlet.company.InsertCompany</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertCompany</servlet-name>
+		<url-pattern>/InsertCompany</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryCompany</servlet-name>
+		<servlet-class>analys.servlet.company.QueryCompany</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryCompany</servlet-name>
+		<url-pattern>/QueryCompany</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CompanyDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.company.CompanyDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyDetailForEdit</servlet-name>
+		<url-pattern>/CompanyDetailForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CompanyDetailForLook</servlet-name>
+		<servlet-class>analys.servlet.company.CompanyDetailForLook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyDetailForLook</servlet-name>
+		<url-pattern>/CompanyDetailForLook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditCompany</servlet-name>
+		<servlet-class>analys.servlet.company.EditCompany</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCompany</servlet-name>
+		<url-pattern>/EditCompany</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelCompany</servlet-name>
+		<servlet-class>analys.servlet.company.DelCompany</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelCompany</servlet-name>
+		<url-pattern>/DelCompany</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertBalanceSheet</servlet-name>
+		<servlet-class>analys.servlet.report.InsertBalanceSheet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertBalanceSheet</servlet-name>
+		<url-pattern>/InsertBalanceSheet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertIncomeStatement</servlet-name>
+		<servlet-class>analys.servlet.report.InsertIncomeStatement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertIncomeStatement</servlet-name>
+		<url-pattern>/InsertIncomeStatement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertCashflowStatement</servlet-name>
+		<servlet-class>analys.servlet.report.InsertCashflowStatement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertCashflowStatement</servlet-name>
+		<url-pattern>/InsertCashflowStatement</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>InsertCashflowSupplement</servlet-name>
+		<servlet-class>analys.servlet.report.InsertCashflowSupplement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertCashflowSupplement</servlet-name>
+		<url-pattern>/InsertCashflowSupplement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryReport</servlet-name>
+		<servlet-class>analys.servlet.report.QueryReport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryReport</servlet-name>
+		<url-pattern>/QueryReport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BalanceSheetDetail</servlet-name>
+		<servlet-class>analys.servlet.report.BalanceSheetDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BalanceSheetDetail</servlet-name>
+		<url-pattern>/BalanceSheetDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IncomeStatementDetail</servlet-name>
+		<servlet-class>analys.servlet.report.IncomeStatementDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncomeStatementDetail</servlet-name>
+		<url-pattern>/IncomeStatementDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CashflowStatementDetail</servlet-name>
+		<servlet-class>analys.servlet.report.CashflowStatementDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CashflowStatementDetail</servlet-name>
+		<url-pattern>/CashflowStatementDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CashflowSupplementDetail</servlet-name>
+		<servlet-class>analys.servlet.report.CashflowSupplementDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CashflowSupplementDetail</servlet-name>
+		<url-pattern>/CashflowSupplementDetail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BalanceSheetDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.report.BalanceSheetDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BalanceSheetDetailForEdit</servlet-name>
+		<url-pattern>/BalanceSheetDetailForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IncomeStatementDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.report.IncomeStatementDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncomeStatementDetailForEdit</servlet-name>
+		<url-pattern>/IncomeStatementDetailForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CashflowStatementDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.report.CashflowStatementDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CashflowStatementDetailForEdit</servlet-name>
+		<url-pattern>/CashflowStatementDetailForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CashflowSupplementDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.report.CashflowSupplementDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CashflowSupplementDetailForEdit</servlet-name>
+		<url-pattern>/CashflowSupplementDetailForEdit</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>EditBalanceSheet</servlet-name>
+		<servlet-class>analys.servlet.report.EditBalanceSheet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditBalanceSheet</servlet-name>
+		<url-pattern>/EditBalanceSheet</url-pattern>
+	</servlet-mapping>
+				
+	<servlet>
+		<servlet-name>EditIncomeStatement</servlet-name>
+		<servlet-class>analys.servlet.report.EditIncomeStatement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditIncomeStatement</servlet-name>
+		<url-pattern>/EditIncomeStatement</url-pattern>
+	</servlet-mapping>
+					
+	<servlet>
+		<servlet-name>EditCashflowStatement</servlet-name>
+		<servlet-class>analys.servlet.report.EditCashflowStatement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCashflowStatement</servlet-name>
+		<url-pattern>/EditCashflowStatement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditCashflowSupplement</servlet-name>
+		<servlet-class>analys.servlet.report.EditCashflowSupplement</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCashflowSupplement</servlet-name>
+		<url-pattern>/EditCashflowSupplement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReportStatistics</servlet-name>
+		<servlet-class>analys.servlet.summary.GetReportStatistics</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReportStatistics</servlet-name>
+		<url-pattern>/GetReportStatistics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertReportStatistics</servlet-name>
+		<servlet-class>analys.servlet.summary.InsertReportStatistics</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertReportStatistics</servlet-name>
+		<url-pattern>/InsertReportStatistics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertIndicator</servlet-name>
+		<servlet-class>analys.servlet.summary.InsertIndicator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertIndicator</servlet-name>
+		<url-pattern>/InsertIndicator</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryIndicator</servlet-name>
+		<servlet-class>analys.servlet.summary.QueryIndicator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryIndicator</servlet-name>
+		<url-pattern>/QueryIndicator</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelIndicator</servlet-name>
+		<servlet-class>analys.servlet.summary.DelIndicator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelIndicator</servlet-name>
+		<url-pattern>/DelIndicator</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditIndicator</servlet-name>
+		<servlet-class>analys.servlet.summary.EditIndicator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditIndicator</servlet-name>
+		<url-pattern>/EditIndicator</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndicatorDetailForEdit</servlet-name>
+		<servlet-class>analys.servlet.summary.IndicatorDetailForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndicatorDetailForEdit</servlet-name>
+		<url-pattern>/IndicatorDetailForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndicatorDetailForLook</servlet-name>
+		<servlet-class>analys.servlet.summary.IndicatorDetailForLook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndicatorDetailForLook</servlet-name>
+		<url-pattern>/IndicatorDetailForLook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryReportStatistics</servlet-name>
+		<servlet-class>analys.servlet.summary.QueryReportStatistics</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryReportStatistics</servlet-name>
+		<url-pattern>/QueryReportStatistics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReportStatisticsFromDatabase</servlet-name>
+		<servlet-class>analys.servlet.summary.GetReportStatisticsFromDatabase</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReportStatisticsFromDatabase</servlet-name>
+		<url-pattern>/GetReportStatisticsFromDatabase</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelReportAnalysis</servlet-name>
+		<servlet-class>analys.servlet.summary.DelReportAnalysis</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelReportAnalysis</servlet-name>
+		<url-pattern>/DelReportAnalysis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReportAnalysisForLook</servlet-name>
+		<servlet-class>analys.servlet.summary.ReportAnalysisForLook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportAnalysisForLook</servlet-name>
+		<url-pattern>/ReportAnalysisForLook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReportAnalysis</servlet-name>
+		<servlet-class>analys.servlet.summary.GetReportAnalysis</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReportAnalysis</servlet-name>
+		<url-pattern>/GetReportAnalysis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReportAnalysisForAdd</servlet-name>
+		<servlet-class>analys.servlet.summary.GetReportAnalysisForAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReportAnalysisForAdd</servlet-name>
+		<url-pattern>/GetReportAnalysisForAdd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetReportAnalysisForEdit</servlet-name>
+		<servlet-class>analys.servlet.summary.GetReportAnalysisForEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetReportAnalysisForEdit</servlet-name>
+		<url-pattern>/GetReportAnalysisForEdit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertReportAnalysis</servlet-name>
+		<servlet-class>analys.servlet.summary.InsertReportAnalysis</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertReportAnalysis</servlet-name>
+		<url-pattern>/InsertReportAnalysis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditReportAnalysis</servlet-name>
+		<servlet-class>analys.servlet.summary.EditReportAnalysis</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditReportAnalysis</servlet-name>
+		<url-pattern>/EditReportAnalysis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelReportAnalysisForOneId</servlet-name>
+		<servlet-class>analys.servlet.summary.DelReportAnalysisForOneId</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelReportAnalysisForOneId</servlet-name>
+		<url-pattern>/DelReportAnalysisForOneId</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetTotalAssetsForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetTotalAssetsForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTotalAssetsForYears</servlet-name>
+		<url-pattern>/GetTotalAssetsForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetAssetLiabilityRatioForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetAssetLiabilityRatioForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAssetLiabilityRatioForYears</servlet-name>
+		<url-pattern>/GetAssetLiabilityRatioForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetDebtRepaymentRiskForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetDebtRepaymentRiskForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDebtRepaymentRiskForYears</servlet-name>
+		<url-pattern>/GetDebtRepaymentRiskForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetQuasiMonetaryForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetQuasiMonetaryForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetQuasiMonetaryForYears</servlet-name>
+		<url-pattern>/GetQuasiMonetaryForYears</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>GetOccupySomeoneElseFundsForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetOccupySomeoneElseFundsForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetOccupySomeoneElseFundsForYears</servlet-name>
+		<url-pattern>/GetOccupySomeoneElseFundsForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetTotalTFxedAssetsForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetTotalTFxedAssetsForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTotalTFxedAssetsForYears</servlet-name>
+		<url-pattern>/GetTotalTFxedAssetsForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetInvestmentAssetRatioForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetInvestmentAssetRatioForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetInvestmentAssetRatioForYears</servlet-name>
+		<url-pattern>/GetInvestmentAssetRatioForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetProportionOfOtherAssetsForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetProportionOfOtherAssetsForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetProportionOfOtherAssetsForYears</servlet-name>
+		<url-pattern>/GetProportionOfOtherAssetsForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetPayrollPayableForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetPayrollPayableForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPayrollPayableForYears</servlet-name>
+		<url-pattern>/GetPayrollPayableForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetRevenueGrowthRateForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetRevenueGrowthRateForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRevenueGrowthRateForYears</servlet-name>
+		<url-pattern>/GetRevenueGrowthRateForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetGrossMarginForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetGrossMarginForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetGrossMarginForYears</servlet-name>
+		<url-pattern>/GetGrossMarginForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetExpenseForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetExpenseForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetExpenseForYears</servlet-name>
+		<url-pattern>/GetExpenseForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetOperatingMarginForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetOperatingMarginForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetOperatingMarginForYears</servlet-name>
+		<url-pattern>/GetOperatingMarginForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetNetProfitForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetNetProfitForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNetProfitForYears</servlet-name>
+		<url-pattern>/GetNetProfitForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetRoeForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetRoeForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRoeForYears</servlet-name>
+		<url-pattern>/GetRoeForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetRemainingCashForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetRemainingCashForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRemainingCashForYears</servlet-name>
+		<url-pattern>/GetRemainingCashForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetcashPaidAndReceivedForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetcashPaidAndReceivedForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetcashPaidAndReceivedForYears</servlet-name>
+		<url-pattern>/GetcashPaidAndReceivedForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetDividendRateForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetDividendRateForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDividendRateForYears</servlet-name>
+		<url-pattern>/GetDividendRateForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCompanyTypeForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetCompanyTypeForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCompanyTypeForYears</servlet-name>
+		<url-pattern>/GetCompanyTypeForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetNetIncreaseInCashForYears</servlet-name>
+		<servlet-class>analys.servlet.statistics.GetNetIncreaseInCashForYears</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNetIncreaseInCashForYears</servlet-name>
+		<url-pattern>/GetNetIncreaseInCashForYears</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics01</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics01</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics01</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics01</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics02</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics02</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics02</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics02</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics03</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics03</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics03</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics03</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics04</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics04</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics04</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics04</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics05</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics05</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics05</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics05</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics06</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics06</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics06</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics06</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics07</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics07</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics07</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics07</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics08</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics08</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics08</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics08</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetIndustryReportstatistics09</servlet-name>
+		<servlet-class>analys.servlet.industry.GetIndustryReportstatistics09</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetIndustryReportstatistics09</servlet-name>
+		<url-pattern>/GetIndustryReportstatistics09</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetDividendsInAnalysis</servlet-name>
+		<servlet-class>analys.servlet.invest.GetDividendsInAnalysis</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDividendsInAnalysis</servlet-name>
+		<url-pattern>/GetDividendsInAnalysis</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertDividends</servlet-name>
+		<servlet-class>analys.servlet.invest.InsertDividends</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertDividends</servlet-name>
+		<url-pattern>/InsertDividends</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryDividends</servlet-name>
+		<servlet-class>analys.servlet.invest.QueryDividends</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryDividends</servlet-name>
+		<url-pattern>/QueryDividends</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>QueryInvestment</servlet-name>
+		<servlet-class>analys.servlet.invest.QueryInvestment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryInvestment</servlet-name>
+		<url-pattern>/QueryInvestment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertInvestment</servlet-name>
+		<servlet-class>analys.servlet.invest.InsertInvestment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertInvestment</servlet-name>
+		<url-pattern>/InsertInvestment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelInvestment</servlet-name>
+		<servlet-class>analys.servlet.invest.DelInvestment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelInvestment</servlet-name>
+		<url-pattern>/DelInvestment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetInvestmentDetail</servlet-name>
+		<servlet-class>analys.servlet.invest.GetInvestmentDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetInvestmentDetail</servlet-name>
+		<url-pattern>/GetInvestmentDetail</url-pattern>
+	</servlet-mapping>
+</web-app>
