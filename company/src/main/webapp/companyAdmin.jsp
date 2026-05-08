@@ -1,0 +1,99 @@
+<%@ page language="java" %>
+<%@ page pageEncoding="UTF-8" %>
+<%@ page contentType="text/html"%>
+<%@ page import="report.bean.entity.*" %>
+<%@ page import="report.bean.daolmp.*" %>
+<%@ page import="java.util.List" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="company" %>
+<jsp:useBean id="cop" class="report.bean.entity.Company" scope="request"/>
+<jsp:useBean id="pb" class="report.bean.entity.PageBean" scope="session"/>
+<jsp:useBean id="cdi" class="report.bean.daolmp.CompanyDaoImp" scope="request"/>
+<jsp:useBean id="ib" class="report.bean.entity.Industry" scope="request"/>
+<jsp:useBean id="irb" class="report.bean.daolmp.IndustryDaoImp" scope="request"/>
+<%
+IndustryDaoImp idi = new IndustryDaoImp();
+String industry1=request.getParameter("industry1");
+List<Industry> ind1List = idi.getIndustry1();
+pageContext.setAttribute("ind1List", ind1List);
+%>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>企业资料维护</title>
+<link href="${contextPath}styles/mid.css?v=<%=System.currentTimeMillis()%>"  rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div><company:head></company:head></div>
+	<div class="mid_kong"></div>
+	<table class="mid_table">
+	<tr>
+	<td style="width:140px;vertical-align:text-top;"><company:left01></company:left01></td>
+	<td style="vertical-align:text-top;">
+	<div class="mid_title">企业资料维护</div>
+	<div class="mid_kong"></div>
+	<form action="QueryCompany" method="post">
+	<div class="mid_div">
+		<div class="mid_div01e">A股简称：</div>
+		<div class="mid_div03"><input type="text" class="mid_box02" name="AShareName"></div>
+		<div class="mid_div01e">A股代码：</div>
+		<div class="mid_div03"><input type="text" class="mid_box02" name="AShareCode"></div>
+		<div class="mid_div01e">一级行业：</div>
+		<div class="mid_div04">
+		<select class="mid_box02" name="industry1" id="industry1">
+            <option></option>
+            <c:forEach var="ind1" items="${ind1List}">
+                <option value="${ind1.industry1}">${ind1.industry1}</option>
+            </c:forEach>
+        </select>
+		</div>
+		<div class="mid_div01e">所属地区：</div>
+		<div class="mid_div03"><input type="text" class="mid_box02" name="region"></div>
+		<div class="mid_div01e"><input type="submit" value="查询"></div>
+	</div>
+</form>
+		<div class="mid_kong"></div>
+<table class="mid_table">
+	  <tbody>
+	    <tr>
+	      <th scope="col" class="mid_table_title">A股代码</th>
+	      <th scope="col" class="mid_table_title">A股简称</th>
+	      <th scope="col" class="mid_table_title">注册日期</th>
+	      <th scope="col" class="mid_table_title">上市日期</th>
+	      <th scope="col" class="mid_table_title">所属地区</th>
+	      <th scope="col" class="mid_table_title">一级行业</th>
+	      <th scope="col" class="mid_table_title">注册资本(万元)</th>
+	      <th scope="col" class="mid_table_title" style="width:90px;">操作</th>
+        </tr>
+       <c:forEach var="cdi" items="${cdiList}" begin="${pb.startRows-1}" end="${pb.endRows}" >
+	    <tr>
+
+	      <td class="mid_table_content"><a href="IndicatorDetailForLook?AShareCode=${cdi.AShareCode}" target="blank">${cdi.AShareCode}</a></td>
+	      <td class="mid_table_content">${cdi.AShareName}</td>
+	      <td class="mid_table_content">${cdi.establishedDate}</td>
+	      <td class="mid_table_content">${cdi.listingDate}</td>
+	      <td class="mid_table_content">${cdi.region}</td>
+	      <td class="mid_table_content">${cdi.primaryIndustry}</td>
+	      <td class="mid_table_content">${cdi.registeredCapital}</td>
+	      	    <c:set var="AShareCode" value="${cdi.AShareCode}" />
+	      <td class="mid_table_content" style="width:90px;">
+			  <div class="mid_table_operate">
+			  <a href="CompanyDetailForEdit?AShareCode=${AShareCode}" target="blank">修改</a>
+			    |  
+			  <a href="DelCompany?AShareCode=${cdi.AShareCode}">删除</a>
+			  </div></td>
+        </tr>
+	 </c:forEach>
+      </tbody>
+</table>
+</td>
+	</tr>
+	</table>
+	<div class='message_font'>${a}</div>
+	<div><company:page></company:page></div>
+	<div class="mid_kong"></div>
+<div><company:end></company:end></div>
+</body>
+</html>
